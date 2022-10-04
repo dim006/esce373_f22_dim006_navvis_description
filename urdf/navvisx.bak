@@ -63,7 +63,7 @@
             </geometry>
         </collision>
     </link>
-    <link name="laser_horiz_joint">
+    <link name="laser_horiz">
         <visual>
             <!-- Shift the box up half its height. !-->
             <origin xyz="0.2325 0.0001 1.9201" rpy="-0.0012 0.1146 -0.0015" />
@@ -80,7 +80,7 @@
         </collision>
     </link>
 
-    <link name="wheel_left_joint">
+    <link name="wheel_left">
         <visual>
             <!-- Shift the box up half its height. !-->
             <origin xyz="-0.10 0.4 0.0" rpy="-1.5707 0.0 0.0" />
@@ -97,17 +97,17 @@
         </collision>
     </link>
     
-    <joint name="base_laser_vert_bottom_joint" type="fixed">
+    <joint name="base_laser_vert_bottom" type="fixed">
             <parent link="base" />
-            <child link="laser_vert_bottom_joint" />
+            <child link="laser_vert_bottom" />
             <origin xyz="0.3158 -0.0021 0.5100" rpy="3.1355 -1.3045 0.0025" />
     </joint>
-    <joint name="base_laser_vert_top_right_joint" type="fixed">
+    <joint name="base_laser_vert_top_right" type="fixed">
             <parent link="base" />
-            <child link="laser_vert_top_right_joint" />
+            <child link="laser_vert_top_right" />
             <origin xyz="0.2978 -0.1450 1.8451" rpy="-1.1760 0.6313 -1.9377" />
     </joint>
-    <joint name="base_laser_vert_top_left_joint" type="fixed">
+    <joint name="base_laser_vert_top_left" type="fixed">
             <parent link="base" />
             <child link="laser_vert_top_left_joint" />
             <origin xyz="0.2997 0.1531 1.8443" rpy="1.1780 0.6198 1.9560" />
@@ -118,7 +118,7 @@
             <origin xyz="0.2325 0.0001 1.9201" rpy="-0.0012 0.1146 -0.0015" />
     </joint>
 
-    <joint name="base_wheel_left_joint" type="fixed">
+    <joint name="base_wheel_left" type="fixed">
             <parent link="base" />
             <child link="wheel_left_joint" />
             <origin xyz="-0.10 0.4 0.0" rpy="-1.5707 0.0 0.0" />

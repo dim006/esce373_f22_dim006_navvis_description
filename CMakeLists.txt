@@ -16,6 +16,7 @@ find_package(catkin REQUIRED COMPONENTS
   
   gazebo_plugins
   velodyne_description
+  
 )
 
 ## System dependencies are found with CMake's conventions
